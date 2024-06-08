@@ -8,10 +8,14 @@ header{
   justify-content: space-around;
   align-items: center;
   font-weight: bold;
-
+   border-bottom:1px solid black ;
 }
 .hed img {
   width: 100px;
+  
+}
+.mainImg{
+  border-radius: 20px;
 }
 ul {
   list-style: none;
@@ -39,7 +43,7 @@ i{
 }
 
 .mainh4{
-  margin:50px 300px;
+  margin:10px 30px;
   color: rgb(130, 130, 130);
   font-weight: 200;
 }
@@ -61,9 +65,100 @@ i{
   display: flex;
   flex-direction: column;
   border: 1px solid black;
+  border-radius: 15px;
+  padding: 0 10px;
 }
 .cardHeader1{
   display: flex;
   justify-content: center;
    border-radius: 5px;
 }
+.cards{
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+}
+.cardHeader2{
+  display: flex;
+  justify-content: center;
+   border-radius: 5px;
+}
+.cardHeader3{
+  display: flex;
+  justify-content: center;
+   border-radius: 5px;
+}
+
+.subTitle{
+  color: blue;
+}
+.tools{
+  color: blue;
+}
+
+.footerH1{
+  background-color: blue;
+  color: white;
+  margin:0 30px;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+footer h2{
+  margin-top: 0;
+}
+.footerH2{
+  text-align: center;
+  background-color: blue;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+footer a{
+  text-align: center;
+  padding-right:8px ;
+}
+
+li:hover{
+  background-color: rgb(16, 253, 218);
+  border-radius: 12px;  
+  
+}
+
+.huuber{
+  color: yellow;
+}
+
+
+.content2 {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.card2{
+  display: flex;
+  width: 700px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 0 10px;
+  border-bottom: 5px solid yellow;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 65px;
+  width: 700px;
+  gap:50px;
+
+}
+
+
