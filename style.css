@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "alahabahah";
+  src: url(StalinistOne-Regular.ttf);
+}
+@font-face {
+  font-family: "alah";
+  src: url(OpenSans-VariableFont_wdth\,wght.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +16,6 @@ header{
   justify-content: space-around;
   align-items: center;
   font-weight: bold;
-   border-bottom:1px solid black ;
 }
 .hed img {
   width: 100px;
@@ -43,7 +50,9 @@ i{
 }
 
 .mainh4{
-  margin:10px 30px;
+  display: flex;
+  justify-content: center;
+  margin:10px 150px;
   color: rgb(130, 130, 130);
   font-weight: 200;
 }
@@ -55,6 +64,7 @@ i{
   color: black;
   align-self: center;
   margin-top: 100px;
+  font-weight: bold;
 }
 
 .skills .cards{
@@ -67,6 +77,7 @@ i{
   border: 1px solid black;
   border-radius: 15px;
   padding: 0 10px;
+  font-family: "alahabahah";
 }
 .cardHeader1{
   display: flex;
@@ -77,6 +88,8 @@ i{
   display: flex;
   padding: 20px;
   gap: 10px;
+  font-size: 15px;
+
 }
 .cardHeader2{
   display: flex;
@@ -100,6 +113,7 @@ i{
   background-color: blue;
   color: white;
   margin:0 30px;
+  margin-top: 52px;
 }
 footer{
   display: flex;
@@ -107,16 +121,18 @@ footer{
   justify-content: center;
   align-items: center;
   background-color: blue;
+  
 }
 footer h2{
-  margin-top: 0;
+  margin: 30px 0;
 }
 .footerH2{
+  display: flex;
   text-align: center;
   background-color: blue;
   color: white;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 20px;
+
 }
 footer a{
   text-align: center;
@@ -129,8 +145,14 @@ li:hover{
   
 }
 
-.huuber{
+.huuber1{
   color: yellow;
+  font-family: "alah";
+  font-size: 30px;
+}
+h3{
+  font-family: "alah";
+  font-size: 15px;
 }
 
 
@@ -141,8 +163,8 @@ li:hover{
 
 .card2{
   display: flex;
-  width: 700px;
-  height: 200px;
+  max-width: 700px;
+  flex-grow: 1;
   border: 1px solid black;
   border-radius: 15px;
   padding: 0 10px;
@@ -154,11 +176,65 @@ li:hover{
 
 .grid2{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-left: 65px;
-  width: 700px;
-  gap:50px;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  max-width: 700px;
+  gap: 50px;
+  margin-top: 52px;
+  margin-bottom: 52px;
 
 }
 
+
+.grid2 img {
+  min-width: 300px;
+  width: 100%;
+}
+.huuber2{
+  color: rgb(175, 126, 255);
+  font-family: "alah";
+  font-size: 30px;
+}
+.card3{
+  display: flex;
+  margin: 0 auto;
+  max-width: 700px; 
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 0 10px;
+  border-bottom: 5px solid rgb(175, 126, 255);
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+ .cards2{
+  display:flex ;
+  flex-direction: row;
+ } 
+ .grid2{
+  grid-template-columns: 1fr;
+  margin: 5px;
+  max-width: 700px;
+  gap: 50px;
+ }
+  .grid2 img{
+    width: 100%;
+  }
+  .card2 {
+    width: auto;
+  }
+  .mainh4 {
+    margin: auto;
+  }
+  .card3 {
+    width: auto;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  
+ 
+}
 
