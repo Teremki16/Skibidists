@@ -10,16 +10,21 @@
   margin: 0;
   padding: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 header{
   margin-top: 25px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-weight: bold;
+  
+  
 }
 .hed img {
   width: 100px;
-  
+  border-radius: 99999px;
 }
 .mainImg{
   border-radius: 20px;
@@ -29,42 +34,61 @@ ul {
   display: flex;
   gap: 10px;
 }
-a {
+a:hover {
   text-decoration: none;
-  color: rgb(86, 86, 86);
+  color: rgb(179, 255, 0);
+  animation: flipInX;
+  animation-duration: 3s;
+  padding: 3px 7px;
+  animation: flash;
+  animation-duration: 3s;
+  
 }
-i{
-  color: rgb(52, 52, 125);
-  margin-left: 10px;
+
+a {
+  color: wheat;
+}
+i:hover {
+  color: rgb(255, 0, 0);
+  animation: flash;
+  animation-duration: 3s;
 }
 
 .content{
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .mainh1{
   margin-top: 25px;
   color: rgb(50, 50, 50);
+  animation: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
 }
 
 .mainh4{
   display: flex;
   justify-content: center;
   margin:10px 150px;
-  color: rgb(130, 130, 130);
+  color: rgb(255, 255, 255);
   font-weight: 200;
 }
 .skills{
   display: flex;
   flex-direction: column;
+  
+  
 }
 .mainh12{
   color: black;
   align-self: center;
   margin-top: 100px;
   font-weight: bold;
+  
 }
 
 .skills .cards{
@@ -89,6 +113,7 @@ i{
   padding: 20px;
   gap: 10px;
   font-size: 15px;
+ 
 
 }
 .cardHeader2{
@@ -139,9 +164,12 @@ footer a{
   padding-right:8px ;
 }
 
-li:hover{
-  background-color: rgb(16, 253, 218);
-  border-radius: 12px;  
+li:hover {
+  background-color: rgb(222, 222, 170);
+  border-radius: 9px;  
+  animation: bounceIn;
+  animation-duration: 1;
+  
   
 }
 
@@ -237,4 +265,28 @@ h3{
   
  
 }
+
+html {
+  background-image: radial-gradient();
+  background: linear-gradient(#3706ea, #e2f705);
+}
+
+.mainImg {
+  animation: bounceIn;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.img {
+  animation: flipInX;
+  animation-duration: 3s;
+}
+
+
+  
+  
+
+
+
 
